@@ -1,8 +1,28 @@
 aid: precisionlender
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/precisionlender.png
 name: PrecisionLender
-description: PrecisionLender is a company surfaced as a portfolio company of insight-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  PrecisionLender is a relationship pricing and profitability platform for commercial
+  banks, now part of Q2 Holdings (acquired 2019). It equips relationship managers,
+  treasury officers, and credit teams to price and structure optimal commercial deals
+  with total relationship visibility, in-deal collaboration, and "Andi", an AI coaching
+  engine that surfaces in-the-moment pricing guidance. The product draws market-competitive
+  intelligence from 150+ financial institutions and integrates into a bank's technology
+  stack to reduce manual data entry. The standalone precisionlender.com site now
+  redirects to the Q2 "Relationship Pricing and Profitability" product; there is no
+  independent public PrecisionLender API, and Q2's developer surface (Q2 Innovation
+  Studio) requires authentication.
 url: https://raw.githubusercontent.com/api-evangelist/precisionlender/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +30,19 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-parent-company: q2-holdings
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Banking
+- Commercial Banking
+- Lending
+- Pricing
+- Profitability
+- Financial Services
+- Fintech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +52,26 @@ maintainers:
 common:
 - type: Website
   url: https://precisionlender.com/
+- type: Documentation
+  url: https://www.q2.com/products/relationship-pricing-and-profitability
+- type: DeveloperPortal
+  url: https://q2developer.com/
+- type: Support
+  url: https://support.precisionlender.com
+- type: Login
+  url: https://application.precisionlender.com/DirectoryLogin/
+- type: SecurityTxt
+  url: well-known/precisionlender-security.txt
+- type: WellKnown
+  url: well-known/precisionlender-well-known.yml
+- type: Security
+  url: https://www.q2.com/security-vulnerabilities-reporting
+- type: VulnerabilityDisclosure
+  url: security/precisionlender-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/precisionlender-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1

@@ -1,0 +1,17 @@
+generated: '2026-07-20'
+method: searched
+# precisionlender.com 301-redirects to Q2 (q2.com); its /.well-known/security.txt
+# resolves to Q2's shared security.txt (Q2 acquired PrecisionLender in 2019).
+host: https://precisionlender.com
+documents:
+- path: /.well-known/security.txt        # RFC 9116 (served via redirect to security.q2.com)
+  status: 200
+  file: precisionlender-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
