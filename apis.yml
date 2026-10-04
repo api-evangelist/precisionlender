@@ -54,7 +54,7 @@ tags:
 - Lending
 - Pricing
 - Profitability
-- Financial-Services
+- Financial Services
 - Fintech
 tags_raw:
 - Company
@@ -65,6 +65,7 @@ tags_raw:
 - Profitability
 - Financial Services
 - Fintech
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
